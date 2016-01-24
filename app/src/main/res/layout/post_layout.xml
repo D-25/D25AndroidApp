@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp">
+
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:src="@drawable/side_nav_bar"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/postTrasparentImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/trasparent"
+        android:layout_alignLeft="@id/postImage"
+        android:layout_alignTop="@id/postImage"
+        android:layout_alignRight="@id/postImage"
+        android:layout_alignBottom="@id/postImage"
+        android:alpha="0.5"
+        />
+
+    <TextView
+        android:id="@+id/postTitleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/postImage"
+        android:layout_toRightOf="@id/postImage"
+        android:maxLines="2"
+        android:text="Titolo articolo"
+        android:layout_alignLeft="@id/postImage"
+        android:layout_alignStart="@id/postImage"
+        android:layout_alignRight="@id/postImage"
+        android:textIsSelectable="false"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#e6e6e6"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/postDescLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#cccccc"
+        android:ellipsize="none"
+        android:text="Descrizione articolo"
+        android:maxLines="5"
+        android:layout_below="@id/postTitleLabel"
+        android:textIsSelectable="false"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/postInfoLabel"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/postDescLabel"
+        android:maxLines="1"
+        android:text="24 Gennaio 2016 scritto da Danilo Civati"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="5dp"
+        />
+</RelativeLayout>
